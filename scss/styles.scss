@@ -425,7 +425,17 @@ footer {
 		}
 	}
 }
-@media screen and (max-width: 552px) {
+@media screen and (max-width: 600px) {
+	.section-jumbotron {
+		.jumbotron-content {
+			h2 {
+				font-size: 40px !important;
+			}
+			p {
+				font-size: 18px !important;
+			}
+		}
+	}
 	.jumbotron-image {
 		img {
 			width: 100% !important;

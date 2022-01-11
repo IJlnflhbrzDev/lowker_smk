@@ -1,10 +1,15 @@
 const loaderEvents = document.querySelector(".loader");
 console.log(loaderEvents)
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
      loaderEvents.classList.remove("d-none");
      setTimeout(() => {
 
           loaderEvents.classList.add("d-none");
      }, 1000);
-     console.log('DOM fully loaded and parsed');
+
+});
+
+// humberger animation
+$(".navbar-toggle").click(function () {
+     $(".open").toggle(500).siblings().toggle(500);
 });
