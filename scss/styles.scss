@@ -1,0 +1,481 @@
+$primary-color: #3278ff;
+$secondary-color: #60a9ff;
+$dark-color: #373737;
+$gray-color: #6f6d6d;
+
+* {
+	transition: all .2s ease;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: $dark-color;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	width: 100%;
+}
+h2 {
+	font-size: 36px;
+	font-weight: 600;
+}
+.mt-6 {
+	margin-top: 4rem;
+}
+p {
+	font-size: 18px;
+}
+// =========================================== STYLE NAVBAR ===========================================
+.navbar {
+	width: 100%;
+	.navbar-brand {
+		font-size: 24px;
+		color: $primary-color !important;
+		font-weight: 600;
+	}
+	.navbar-collapse {
+		.navbar-nav {
+			.nav-item {
+				margin-left: 30px;
+				.nav-link {
+					color: $dark-color;
+				}
+			}
+		}
+	}
+}
+
+// =========================================== STYLE JUMBOTRON ===========================================
+.section-jumbotron {
+	position: relative;
+	.jumbotron-content {
+		h2 {
+			font-size: 48px;
+			font-weight: 600;
+			letter-spacing: 2px;
+			margin-bottom: 23px;
+			span {
+				color: $primary-color;
+			}
+		}
+		p {
+			font-size: 18px;
+			color: $dark-color;
+		}
+	}
+	.jumbotron-image {
+		text-align: right;
+		img {
+			width: 480px;
+			height: 528px;
+		}
+	}
+	.parent-job-card {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(255, 255, 255, 0.8);
+		filter: blur(20);
+		width: max-content;
+		padding: 15px;
+		border-radius: 10px;
+		margin: 10px auto auto;
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%);
+		.job-card-img {
+			margin-right: 10px;
+		}
+		.job-card-content {
+			.title {
+				font-size: 18px;
+				font-weight: 700;
+				margin-bottom: .4rem;
+			}
+			.description {
+				font-size: 14px;
+				margin: 0;
+			}
+		}
+	}
+	.decor-circle {
+		width: 100%;
+		height: 110px;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url('../assets/img/decor-circle.png');
+	}
+	.decor-kotak {
+		width: 100%;
+		height: 80px;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url('../assets/img/decor-kotak.png');
+	}
+}
+// =========================================== STYLE ABOUT ===========================================
+.section-about {
+	position: relative;
+	background-color: $primary-color;
+	color: white;
+
+	.about-content {
+		text-align: center;
+		padding: 40px 0px;
+		h2 {
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: 2px;
+			margin: 20px 0px;
+		}
+		p {
+			font-size: 18px;
+			width: 62%;
+			opacity: .9;
+			margin: 20px auto;
+			line-height: 27px;
+		}
+	}
+}
+// =========================================== STYLE EXPLORE JOB ===========================================
+.section-explore-job {
+	.explore-job-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		.title-description {
+			p {
+				margin-top: 30px;
+				margin-bottom: 0px;
+				color: #6f6d6d;
+			}
+		}
+	}
+	.text-location {
+		margin-bottom: 5px;
+	}
+	.card {
+		// width: 70%;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		border: 0px;
+	}
+}
+
+// =========================================== STYLE GET YOUR JOB ===========================================
+.section-get-your-job {
+	.get-your-job {
+		p {
+			color: #6f6d6d;
+			width: 35%;
+			margin: 25px auto 0px auto;
+		}
+	}
+	.content {
+		h2 {
+			margin-bottom: 30px;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+// =========================================== STYLE DROP YOUR  CV ===========================================
+.section-drop-your-cv {
+	.get-your-job {
+		p {
+			color: #6f6d6d;
+			width: 35%;
+			margin: 25px auto 0px auto;
+		}
+	}
+	.content {
+		h2 {
+			margin-bottom: 30px;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+// =========================================== STYLE FAQ ===========================================
+.section-drop-your-cv {
+	.content {
+		h2 {
+			margin-bottom: 30px;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+// =========================================== STYLE FOOTER ===========================================
+footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 20px;
+	box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
+	background-color: $primary-color;
+	color: white;
+	i {
+		margin-right: 2px;
+	}
+	.title_content {
+		p {
+			font-size: 14px;
+			color: lightgray;
+		}
+	}
+	.title_newsleter {
+		h6 {
+			font-weight: 700;
+		}
+		p {
+			font-size: 14px;
+			color: lightgray;
+		}
+	}
+	.title_link,
+	.title_service {
+		h6 {
+			margin-bottom: 15px;
+			font-weight: 700;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+				margin-bottom: 10px;
+				a {
+					text-decoration: none;
+					color: lightgray;
+					font-size: 16px;
+					&:hover {
+						color: white;
+					}
+					i {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+	.input_subscribe {
+		margin-top: 10px;
+		display: inline-flex;
+		position: relative;
+		input {
+			padding: 6px 15px;
+			border-radius: 125px;
+			margin-right: 5px;
+			border: 1px solid #03ac0e;
+			outline: none !important;
+		}
+		.btn-subscribe {
+			padding: 10px 30px;
+			position: absolute;
+			left: 80%;
+			top: -2px;
+			background-color: #03ac0e;
+			border-radius: 60px;
+			text-decoration: none;
+			color: white;
+			box-shadow: 2px 2px 5px #03ac0e;
+			&:hover {
+				background: #43ac0e;
+			}
+		}
+	}
+}
+.footer-card {
+	h2 {
+		color: $primary-color;
+	}
+	.icon-card-footer {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		align-items: center;
+
+		.icon-footer {
+			background-color: #ecf2ff;
+			width: 50px;
+			height: 50px;
+			margin-right: 20px;
+			color: $primary-color;
+			border-radius: 50%;
+			line-height: 50px;
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.card-pricisig {
+		.nav-link {
+			padding: .5rem 1rem;
+			border-radius: 4px;
+		}
+		.card {
+			.card-body {
+				padding: 1rem;
+			}
+		}
+	}
+	.input_subscribe {
+		margin-bottom: 40px;
+		.btn-subscribe {
+			padding: 8px 20px !important;
+		}
+	}
+	.title_socialmedia {
+		a {
+			padding: 8px !important;
+		}
+	}
+	.title_service {
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+}
+
+// =========================================== STYLE LOADER ===========================================
+
+.loader {
+	background-color: rgba($color: $gray-color, $alpha: .7);
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	z-index: 100000;
+}
+.loader__element {
+	border-radius: 100%;
+	border: 5px solid white;
+	margin: 18px;
+}
+
+.loader__element:nth-child(1) {
+	animation: preloader .6s ease-in-out alternate infinite;
+}
+.loader__element:nth-child(2) {
+	animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.loader__element:nth-child(3) {
+	animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+
+@keyframes preloader {
+	100% {
+		transform: scale(2);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-jumbotron {
+		.jumbotron-content {
+			h2 {
+				font-size: 28px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+		.jumbotron-image {
+			img {
+				display: block;
+				width: 90%;
+				object-fit: cover;
+				background-size: cover;
+				height: max-content;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	// faq
+	.section-faq {
+		.row {
+			flex-direction: column-reverse;
+			img {
+				width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 552px) {
+	.jumbotron-image {
+		img {
+			width: 100% !important;
+			margin-bottom: 30px !important;
+		}
+	}
+	.jumbotron-content {
+		text-align: center;
+	}
+
+	.section-about {
+		.about-content {
+			p {
+				width: 100%;
+			}
+		}
+	}
+	.section-explore-job {
+		.explore-job-content {
+			display: block;
+			text-align: center;
+		}
+		.btn {
+			margin-top: 30px;
+		}
+	}
+	.section-drop-your-cv {
+		img {
+			margin-bottom: 30px;
+		}
+	}
+	.section-get-your-job {
+		.get-your-job {
+			p {
+				width: 100%;
+			}
+		}
+	}
+	h2 {
+		font-size: 28px;
+	}
+	//
+	.reverse-md-column {
+		flex-direction: column-reverse;
+	}
+	.decor-kotak {
+		bottom: 60px !important;
+	}
+	.mobile-description {
+		width: 100% !important;
+		text-align: center !important;
+	}
+}
