@@ -38,6 +38,29 @@
 		}
 	}
 }
+.section-explore-job {
+	a {
+		text-decoration: none;
+		color: black;
+		overflow: hidden;
+		width: 100%;
+		.card {
+			overflow: hidden;
+		}
+		&:hover {
+			overflow: hidden;
+			.card {
+				transform: scale(.97);
+				h5 {
+					color: gray;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 600px) {
 	.banner-hero-content {

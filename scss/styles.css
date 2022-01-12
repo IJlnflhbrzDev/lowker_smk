@@ -47,6 +47,34 @@
   font-size: 18px;
 }
 
+.section-explore-job a {
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  width: 100%;
+}
+
+.section-explore-job a .card {
+  overflow: hidden;
+}
+
+.section-explore-job a:hover {
+  overflow: hidden;
+}
+
+.section-explore-job a:hover .card {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.section-explore-job a:hover .card h5 {
+  color: gray;
+}
+
+.section-explore-job a:hover .card h5:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 600px) {
   .banner-hero-content {
     height: 250px !important;
