@@ -1,0 +1,49 @@
+#banner-hero {
+	.banner-hero-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: url("../assets/img/list-loker.png");
+		object-fit: cover;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		height: 350px;
+		border-radius: 10px;
+		position: relative;
+		z-index: 1;
+		&::after {
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgba(50, 120, 255, .5);
+			z-index: -1;
+		}
+		.search-list-loker {
+			width: 50%;
+			margin: 0 auto;
+
+			.form-control {
+				height: 45px;
+				border-radius: 60px 0px 0px 60px;
+			}
+			button {
+				border-radius: 0px 60px 60px 0px;
+				width: 57px;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.banner-hero-content {
+		height: 250px !important;
+		.search-list-loker {
+			width: 80% !important;
+		}
+	}
+}

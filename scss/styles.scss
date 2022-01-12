@@ -1,3 +1,4 @@
+@import "../list-loker/list-loker";
 $primary-color: #3278ff;
 $secondary-color: #60a9ff;
 $dark-color: #373737;
@@ -45,6 +46,10 @@ p {
 				}
 			}
 		}
+	}
+	.active {
+		color: $primary-color !important;
+		font-weight: bold;
 	}
 }
 
@@ -166,7 +171,7 @@ p {
 	}
 	.card {
 		// width: 70%;
-		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 		border: 0px;
 	}
 }
