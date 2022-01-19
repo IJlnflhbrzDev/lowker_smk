@@ -38,6 +38,21 @@
 		}
 	}
 }
+.blog-link-card {
+	text-decoration: none;
+	color: black;
+	&:hover {
+		.card {
+			-webkit-transform: scale(0.97);
+			transform: scale(0.97);
+			h5 {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
 
 .sticky-list-blog {
 	position: sticky;

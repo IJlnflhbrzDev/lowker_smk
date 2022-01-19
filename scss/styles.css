@@ -557,6 +557,20 @@
   color: #919191;
 }
 
+.blog-link-card {
+  text-decoration: none;
+  color: black;
+}
+
+.blog-link-card:hover .card {
+  -webkit-transform: scale(0.97);
+  transform: scale(0.97);
+}
+
+.blog-link-card:hover .card h5:hover {
+  text-decoration: underline;
+}
+
 .sticky-list-blog {
   position: -webkit-sticky;
   position: sticky;
