@@ -1,4 +1,10 @@
 #blog {
+	.dekstop {
+		display: block;
+	}
+	.mobile {
+		display: none;
+	}
 	.search {
 		&__container {
 			position: relative;
@@ -143,6 +149,12 @@
 }
 @media screen and (max-width: 500px) {
 	#blog {
+		.dekstop {
+			display: block;
+		}
+		.mobile {
+			display: none;
+		}
 		.blog-card {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
