@@ -1,5 +1,5 @@
 #blog {
-	.dekstop {
+	.dekstop_search {
 		display: block;
 	}
 	.mobile {
@@ -149,11 +149,11 @@
 }
 @media screen and (max-width: 500px) {
 	#blog {
-		.dekstop {
-			display: block;
+		.dekstop_search {
+			display: none !important;
 		}
 		.mobile {
-			display: none;
+			display: block !important;
 		}
 		.blog-card {
 			display: grid;

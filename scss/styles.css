@@ -286,7 +286,7 @@
   }
 }
 
-#blog .dekstop {
+#blog .dekstop_search {
   display: block;
 }
 
@@ -488,11 +488,11 @@
 }
 
 @media screen and (max-width: 500px) {
-  #blog .dekstop {
-    display: block;
+  #blog .dekstop_search {
+    display: none !important;
   }
   #blog .mobile {
-    display: none;
+    display: block !important;
   }
   #blog .blog-card {
     display: -ms-grid;
