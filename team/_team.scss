@@ -63,13 +63,6 @@
 	}
 }
 
-@media screen and (min-width: 576px) {
-	.container,
-	.container-sm {
-		max-width: 100% !important;
-	}
-}
-
 @media screen and (max-width: 500px) {
 	.team-content {
 		.col-md-6 {
