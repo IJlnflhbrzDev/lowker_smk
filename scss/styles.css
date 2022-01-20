@@ -18,6 +18,7 @@
   border-radius: 10px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 #banner-hero .banner-hero-content::after {

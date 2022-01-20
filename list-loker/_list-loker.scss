@@ -12,6 +12,7 @@
 		border-radius: 10px;
 		position: relative;
 		z-index: 1;
+		overflow: hidden;
 		&::after {
 			content: " ";
 			position: absolute;
